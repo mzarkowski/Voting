@@ -6,7 +6,9 @@ var Sockets = Sockets || {};
 Sockets.socket = io.connect(window.location.hostname);
 
 Sockets.socket.on('poll update', function(data) {
-    updateBars(data);
+	if(isNumeric(data.option1) && isNumeric(data.option2)){
+		updateBars(data);
+	}
 });
 
 var vote = function(that, voteOption) {

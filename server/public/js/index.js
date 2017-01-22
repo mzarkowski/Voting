@@ -6,9 +6,7 @@ var Sockets = Sockets || {};
 Sockets.socket = io.connect(window.location.hostname);
 
 Sockets.socket.on('poll update', function(data) {
-	if(isNumeric(data.option1) && isNumeric(data.option2)){
-		updateBars(data);
-	}
+	updateBars(data);
 });
 
 var vote = function(that, voteOption) {
@@ -24,7 +22,10 @@ function calculatePercentage(data) {
     var option2 = data.option2;
 
     var total = option1 + option2;
-
+	
+	// don't divide by 0
+	total = total != 0 ? total: 1;
+	
     return {
         option1: option1 / total,
         option2: option2 / total

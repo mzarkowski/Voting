@@ -1,0 +1,13 @@
+{
+  "name": "Server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "repository": "",
+  "author": "",
+  "dependencies": {
+	  "express": "4.x",
+	  "socket.io" : "1.0.x",
+	  "mongodb": "1.1.x"
+	  }
+}

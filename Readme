@@ -1,0 +1,17 @@
+A simple client-server voting application with docker-compose and cloudformation setup. 
+
+Getting started
+ - Locally 
+  Run:
+  docker-compose up
+ - Amazon
+ Go to cloudformation and upload CloudFormation template.
+ 
+Architecture:
+- A nodejs backend for handling sockets and serving static website
+- A mongodb database
+
+CloudFormation:
+- a vpc with a public subnet
+- a security group with port 80 allowed for everyone
+- an ec2 instance running on a spot instance without keypair with public IP

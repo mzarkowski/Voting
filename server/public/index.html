@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Ubuntu vs Windows</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+	  
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	  
+   </head>
+   <body>
+      <div class="container">
+	  
+         <div class="voting-table">
+		 
+            <div class="voting-row">
+               <div class="voting-cell">
+                  <div id="option1" class="voting-option voting-option-winning">
+                     <p>0%</p>
+                     <p>ubuntu</p>
+                  </div>
+               </div>
+               <div class="voting-cell">
+                  <div id="option2" class="voting-option voting-option-loosing">
+                     <p>0%</p>
+                     <p>windows</p>
+                  </div>
+               </div>
+            </div>
+			
+            <div class="voting-row">
+               <div>
+                  <button type="button" class="btn btn-primary vote-button" onclick="vote(this, 1)">
+                  vote <span class="glyphicon glyphicon-thumbs-up"></span>
+                  </button>
+               </div>
+               <div>
+                  <button type="button" class="btn btn-primary vote-button" onclick="vote(this, 2)">
+                  vote <span class="glyphicon glyphicon-thumbs-up"></span>
+                  </button>
+               </div>
+            </div>
+			
+         </div>
+		 
+      </div>
+	  
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  
+      <!-- Bootstrap -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  
+      <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+   </body>
+</html>

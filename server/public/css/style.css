@@ -1,0 +1,52 @@
+.voting-table {
+	width: 210px; 
+	border-spacing: 10px;
+}
+
+.voting-row {
+    display:table-row; 
+	position: relative
+}
+
+.voting-row > div {
+	display: table-cell;
+}
+
+.voting-cell {
+	height: 200px; 
+	width: 100px;
+}
+
+.voting-option {
+	position: absolute; 
+	bottom: 0; 
+	vertical-align: middle; 
+	width: 90px; 
+	text-align: center; 
+	color: #fff;
+}
+
+.voting-option > p:first-child {
+	font-size: 200%;
+}
+
+.voting-option-winning {
+	background-color: #00cc00; 
+	height: 70px; 
+}
+
+.voting-option-loosing {
+	background-color: #ff3300;
+	height: 70px; 
+}
+
+.vote-button {
+	width: 90px;
+}
+
+.voted {
+	width: 190px;
+    position:absolute;
+    left:0;
+    right:0;
+}

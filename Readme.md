@@ -1,17 +1,22 @@
 # Voting app
 
-A simple client-server voting application with docker-compose and cloudformation setup. [See demo](http://http://ec2-54-202-142-202.us-west-2.compute.amazonaws.com/)
+A simple client-server voting application with docker-compose and cloudformation setup. 
 
-### Getting started
-#### Local
+[See live demo](http://ec2-54-202-143-249.us-west-2.compute.amazonaws.com)
+
+![Screenshot](demo/demo.png?raw=true "Demo")
+
+## Getting started
+### Locally
+Run:
 ```sh
 docker-compose up
 ```
-(may clash with any other webserver running on host:80)
+(will clash with any other webserver running on host:80)
 
 and open http://localhost in your browser.
 
-#### AWS
+### AWS
 
 Go to *CloudFormation > Create Stack* and upload ec2_cloudFormation.json template. 
 
@@ -23,6 +28,8 @@ Go to *CloudFormation > Create Stack* and upload ec2_cloudFormation.json templat
  * PublicDNS
 
 Wait ~10 minutes for docker to launch and open *PublicDNS* in your browser. 
+
+![Screenshot](demo/aws.png?raw=true "AWS output")
 
 ### Architecture:
 - A nodejs backend for handling sockets and serving static website

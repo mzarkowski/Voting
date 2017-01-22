@@ -2,7 +2,7 @@
 
 A simple client-server voting application with docker-compose and cloudformation setup. 
 
-[See live demo](http://ec2-54-213-136-190.us-west-2.compute.amazonaws.com/)
+[See live demo](http://ec2-54-191-188-61.us-west-2.compute.amazonaws.com/)
 
 ![Screenshot](demo/demo.png?raw=true "Demo")
 
